@@ -221,6 +221,10 @@ template {
   overflow: hidden;
 }
 
+body {
+  font-size: 125%;
+}
+
 .wrapper {
   max-width: 1280px;
   width: 80%;
@@ -233,4 +237,56 @@ h1 {
 
 h2 {
   font-family: "Arapey", serif;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  height: 100vh;
+  background-color: #CBF3F0;
+}
+
+.header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
+}
+.header-content .header-text {
+  text-align: center;
+}
+.header-content .header-text h1 {
+  font-size: 5.5rem;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin: 0;
+}
+nav ul li {
+  margin: 30px 50px;
+}
+nav ul li:last-child {
+  margin-right: 0;
+}
+nav ul a {
+  text-decoration: none;
+  color: #2EC4B6;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
