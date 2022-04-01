@@ -41,12 +41,25 @@ dogApp.displayInfo = (dogObjects) => {
     // optionElement.appendChild();
     dropdown.appendChild(optionElement);
   })
+
+  const userSelection = document.querySelector("option");
+
+  userSelection.addEventListener("click", function(event){
+    event.preventDefault()
+
+    const dogChoice = userSelection.value
+    console.log(dogChoice)
+  })
+
+
 }
-// when it fails, show error message / "expand your search"
 
-// forEach loop to allow all matching breeds to show up
+// on click event, show image for specified breed
 
-// on click event, show details for specified breed
+
+
+
+// 2nd click event to show details
 
 // create init fucntion to house application
   // call methods
