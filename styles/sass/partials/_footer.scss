@@ -1,0 +1,17 @@
+footer {
+    text-align: center;
+    background-color: $tertiary;
+    padding: 10px 0;
+
+    a {
+        color: black;
+        padding: 5px;
+        border-radius: 5px;
+
+        &:hover,
+        &:focus {
+            color: $accent;
+            background-color: $quaternary;
+        }
+    }
+}

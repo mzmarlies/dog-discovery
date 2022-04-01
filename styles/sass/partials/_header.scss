@@ -3,17 +3,23 @@ header {
   background-color: $secondary;
 }
 
-.header-content {
+.content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 70vh;
 
-  .header-text {
+  // .img-container {
+  //   border: 10px solid $primary;
+  // }
+
+  .text {
     text-align: center;
+    margin: 0 30px;
 
     h1 {
       font-size: 5.5rem;
+      color: $primary;
     }
   }
 }
@@ -34,11 +40,27 @@ nav ul {
   
 
   a {
-    text-decoration: none;
-    color: $primary;
-    font-family: $body-font;
-    font-weight: 700;
-    font-size: 1.5rem;
+    color: $accent;
+    
+    &:hover,
+    &:focus {
+      color: $quaternary;
+    }
+  }
+}
+
+button,
+select {
+  border: none;
+  padding: 10px 20px;
+  background-color: $quaternary;
+  border-radius: 5px;
+  font-family: $body-font;
+  font-weight: 300;
+
+  &:hover,
+  &:focus {
+    background-color: $tertiary;
   }
 }
 

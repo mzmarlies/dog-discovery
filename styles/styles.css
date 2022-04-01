@@ -237,10 +237,40 @@ h1 {
 
 h2 {
   font-family: "Arapey", serif;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-family: "Arapey", serif;
 }
 
 p {
   font-family: "Lato", sans-serif;
+}
+
+.img-container {
+  height: 300px;
+  width: 300px;
+  -webkit-box-shadow: 10px 10px 0 0 #FF9F1C, 20px 20px 0 0 #FFBF69;
+          box-shadow: 10px 10px 0 0 #FF9F1C, 20px 20px 0 0 #FFBF69;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.img-container img {
+  height: 100%;
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 header {
@@ -248,7 +278,7 @@ header {
   background-color: #CBF3F0;
 }
 
-.header-content {
+.content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,11 +290,13 @@ header {
           align-items: center;
   height: 70vh;
 }
-.header-content .header-text {
+.content .text {
   text-align: center;
+  margin: 0 30px;
 }
-.header-content .header-text h1 {
+.content .text h1 {
   font-size: 5.5rem;
+  color: #2EC4B6;
 }
 
 nav ul {
@@ -284,9 +316,67 @@ nav ul li:last-child {
   margin-right: 0;
 }
 nav ul a {
-  text-decoration: none;
-  color: #2EC4B6;
+  color: #11504a;
+}
+nav ul a:hover, nav ul a:focus {
+  color: #FF9F1C;
+}
+
+button,
+select {
+  border: none;
+  padding: 10px 20px;
+  background-color: #FF9F1C;
+  border-radius: 5px;
   font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
+  font-weight: 300;
+}
+button:hover, button:focus,
+select:hover,
+select:focus {
+  background-color: #FFBF69;
+}
+
+.interactive-section {
+  background-color: #2EC4B6;
+}
+.interactive-section .text {
+  background-color: #CBF3F0;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+.gallery {
+  background-color: #2EC4B6;
+}
+.gallery .gallery-h2 {
+  text-align: center;
+  margin: 0;
+  padding-top: 50px;
+}
+.gallery .gallery-content {
+  height: auto;
+}
+.gallery .gallery-content .gallery-img {
+  margin: 50px 25px;
+}
+
+.results {
+  height: 100vh;
+  background-color: #CBF3F0;
+}
+
+footer {
+  text-align: center;
+  background-color: #FFBF69;
+  padding: 10px 0;
+}
+footer a {
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+}
+footer a:hover, footer a:focus {
+  color: #11504a;
+  background-color: #FF9F1C;
 }

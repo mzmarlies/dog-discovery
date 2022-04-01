@@ -1,0 +1,17 @@
+.gallery {
+    background-color: $primary;
+
+    .gallery-h2 {
+        text-align: center;
+        margin: 0;
+        padding-top: 50px;
+    }
+
+    .gallery-content {
+        height: auto;
+
+        .gallery-img {
+            margin: 50px 25px;
+        }
+    }
+}
