@@ -2,14 +2,44 @@
 const dogApp = {};
 
 // api url (breeds?)
-dogApp.apiUrl = "https://api.thedogapi.com/v1/breeds/"
+dogApp.apiUrl = "https://api.thedogapi.com/v1/breeds/";
+
+dogApp.randomPicUrl = "https://dog.ceo/api/breeds/image/random/7";
 
 // api key
-dogApp.apiKey = "3e69176f-30f7-43b0-a73b-9152505ba7d0"
+dogApp.apiKey = "3e69176f-30f7-43b0-a73b-9152505ba7d0";
 
 
 
 // define the method to make request to API (appObject.getBreed)
+// dogApp.getImage = () => {
+//   const url = new URL(dogApp.randomPicUrl);
+//   url.search = new URLSearchParams({
+//     "x-api-key": dogApp.apiKey
+//   })
+
+//   // fetch api
+//   fetch(url).then((response) => {
+//     return response.json();
+//   }).then((jsonResponse) => {
+
+//     dogApp.displayPic(jsonResponse);
+//     console.log(jsonResponse);
+//   })
+// };
+
+// dogApp.displayPic = () => {
+//   const imgContainer = document.querySelector('.img-container');
+
+//   dogImages.forEach((dog) => {
+//     const imgElement = document.createElement('img');
+//     // imgElement.src = '';
+
+//   })
+// }
+
+
+
 dogApp.getBreed = () => {
   const url = new URL(dogApp.apiUrl);
   url.search = new URLSearchParams({

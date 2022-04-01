@@ -16,22 +16,35 @@ header {
   .text {
     text-align: center;
     margin: 0 30px;
+    padding-bottom: 30px;
+    border: 10px solid $tertiary;
+    max-width: 60%;
+    // border-bottom: 10px solid $tertiary;
 
     h1 {
       font-size: 5.5rem;
       color: $primary;
+      text-shadow: 2px 2px 2px $accent;
     }
   }
 }
+
+// .header-content {
+//   background-color: #F9C74F;
+// }
+
 
 nav ul {
   display: flex;
   list-style: none;
   justify-content: end;
   margin: 0;
+  margin-bottom: 30px;
+
+  // border-bottom: 1px solid $accent;
 
   li {
-    margin: 30px 50px;
+    margin: 30px 40px;
   }
 
   li:last-child {
@@ -41,6 +54,8 @@ nav ul {
 
   a {
     color: $accent;
+    text-transform: uppercase;
+    font-weight: 700;
     
     &:hover,
     &:focus {
@@ -53,6 +68,7 @@ button,
 select {
   border: none;
   padding: 10px 20px;
+  margin: 20px 0;
   background-color: $quaternary;
   border-radius: 5px;
   font-family: $body-font;

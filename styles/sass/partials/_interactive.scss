@@ -5,6 +5,19 @@
         background-color: $secondary;
         padding: 50px;
         border-radius: 5px;
+
+        select {
+            font-family: $sub-headers;
+
+            option {
+                &:hover,
+                &:focus {
+                    background-color: $primary;
+                } 
+            }
+
+            
+        }
     }
 
     // .img-container {

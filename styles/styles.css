@@ -227,7 +227,7 @@ body {
 
 .wrapper {
   max-width: 1280px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -238,6 +238,7 @@ h1 {
 h2 {
   font-family: "Arapey", serif;
   font-size: 2.5rem;
+  margin: 0 20px;
 }
 
 h3 {
@@ -249,14 +250,16 @@ p {
 }
 
 .img-container {
-  height: 300px;
-  width: 300px;
-  -webkit-box-shadow: 10px 10px 0 0 #FF9F1C, 20px 20px 0 0 #FFBF69;
-          box-shadow: 10px 10px 0 0 #FF9F1C, 20px 20px 0 0 #FFBF69;
+  height: auto;
+  width: calc(30% - 60px);
   -o-object-fit: contain;
      object-fit: contain;
+  margin: 0 30px;
 }
 .img-container img {
+  -webkit-box-shadow: 30px 30px 0 0 #FFF, -30px -30px 0 0 #FF9F1C;
+          box-shadow: 30px 30px 0 0 #FFF, -30px -30px 0 0 #FF9F1C;
+  border: 5px solid #FFBF69;
   height: 100%;
   width: 100%;
 }
@@ -293,10 +296,14 @@ header {
 .content .text {
   text-align: center;
   margin: 0 30px;
+  padding-bottom: 30px;
+  border: 10px solid #FFBF69;
+  max-width: 60%;
 }
 .content .text h1 {
   font-size: 5.5rem;
   color: #2EC4B6;
+  text-shadow: 2px 2px 2px #11504a;
 }
 
 nav ul {
@@ -308,15 +315,18 @@ nav ul {
       -ms-flex-pack: end;
           justify-content: end;
   margin: 0;
+  margin-bottom: 30px;
 }
 nav ul li {
-  margin: 30px 50px;
+  margin: 30px 40px;
 }
 nav ul li:last-child {
   margin-right: 0;
 }
 nav ul a {
   color: #11504a;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 nav ul a:hover, nav ul a:focus {
   color: #FF9F1C;
@@ -326,6 +336,7 @@ button,
 select {
   border: none;
   padding: 10px 20px;
+  margin: 20px 0;
   background-color: #FF9F1C;
   border-radius: 5px;
   font-family: "Lato", sans-serif;
@@ -345,6 +356,12 @@ select:focus {
   padding: 50px;
   border-radius: 5px;
 }
+.interactive-section .text select {
+  font-family: "Arapey", serif;
+}
+.interactive-section .text select option:hover, .interactive-section .text select option:focus {
+  background-color: #2EC4B6;
+}
 
 .gallery {
   background-color: #2EC4B6;
@@ -359,6 +376,12 @@ select:focus {
 }
 .gallery .gallery-content .gallery-img {
   margin: 50px 25px;
+}
+.gallery .gallery-content .gallery-img img {
+  border: 10px solid #FFBF69;
+  -webkit-box-shadow: 0 10px 0 0 #FF9F1C;
+          box-shadow: 0 10px 0 0 #FF9F1C;
+  border-radius: 50%;
 }
 
 .results {

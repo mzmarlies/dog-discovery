@@ -12,6 +12,13 @@
 
         .gallery-img {
             margin: 50px 25px;
+
+            img {
+                border: 10px solid $tertiary;
+                box-shadow: 0 10px 0 0 $quaternary;
+                border-radius: 50%;
+            }
+            
         }
     }
 }
