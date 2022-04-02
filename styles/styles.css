@@ -239,6 +239,7 @@ h2 {
   font-family: "Arapey", serif;
   font-size: 2.5rem;
   margin: 0 20px;
+  color: #11504a;
 }
 
 h3 {
@@ -278,7 +279,8 @@ a {
 
 header {
   height: 100vh;
-  background-color: #CBF3F0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF9F1C), color-stop(#FFBF69), color-stop(#FFF), color-stop(#CBF3F0), to(#2EC4B6));
+  background: linear-gradient(#FF9F1C, #FFBF69, #FFF, #CBF3F0, #2EC4B6);
 }
 
 .content {
@@ -297,13 +299,14 @@ header {
   text-align: center;
   margin: 0 30px;
   padding-bottom: 30px;
-  border: 10px solid #FFBF69;
+  border: 10px solid #F4D06F;
   max-width: 60%;
+  background-color: hsla(176deg, 63%, 87%, 0.3);
 }
 .content .text h1 {
   font-size: 5.5rem;
+  text-shadow: 2px 2px 3px #11504a;
   color: #2EC4B6;
-  text-shadow: 2px 2px 2px #11504a;
 }
 
 nav ul {
