@@ -233,6 +233,7 @@ body {
 
 h1 {
   font-family: "Abril Fatface", cursive;
+  margin-top: 0;
 }
 
 h2 {
@@ -251,8 +252,8 @@ p {
 }
 
 .img-container {
-  height: auto;
-  width: calc(30% - 60px);
+  height: 300px;
+  width: 300px;
   -o-object-fit: contain;
      object-fit: contain;
   margin: 0 30px;
@@ -263,6 +264,42 @@ p {
   border: 5px solid #FFBF69;
   height: 100%;
   width: 100%;
+}
+
+.top-image,
+.middle-image,
+.bottom-image {
+  height: 225px;
+  width: 225px;
+}
+.top-image img,
+.middle-image img,
+.bottom-image img {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.top-image {
+  margin: 0 0 -50px -150px;
+}
+
+.middle-image {
+  margin: 0 0 -50px 0;
+  z-index: 10;
+}
+
+.bottom-image {
+  margin-left: -150px;
+}
+
+.header-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 ul {
@@ -298,7 +335,7 @@ header {
 .content .text {
   text-align: center;
   margin: 0 30px;
-  padding-bottom: 30px;
+  padding: 30px;
   border: 10px solid #F4D06F;
   max-width: 60%;
   background-color: hsla(176deg, 63%, 87%, 0.3);
@@ -307,6 +344,14 @@ header {
   font-size: 5.5rem;
   text-shadow: 2px 2px 3px #11504a;
   color: #2EC4B6;
+}
+
+.header-text {
+  max-width: 55%;
+}
+
+nav {
+  margin-bottom: 30px;
 }
 
 nav ul {
@@ -318,7 +363,6 @@ nav ul {
       -ms-flex-pack: end;
           justify-content: end;
   margin: 0;
-  margin-bottom: 30px;
 }
 nav ul li {
   margin: 30px 40px;

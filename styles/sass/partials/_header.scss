@@ -17,7 +17,7 @@ header {
   .text {
     text-align: center;
     margin: 0 30px;
-    padding-bottom: 30px;
+    padding: 30px;
     border: 10px solid #F4D06F;
     max-width: 60%;
     // border-bottom: 10px solid $tertiary;
@@ -31,17 +31,23 @@ header {
   }
 }
 
+.header-text {
+  max-width: 55%;
+}
+
 // .header-content {
 //   background-color: #F9C74F;
 // }
 
+nav {
+  margin-bottom: 30px;
+}
 
 nav ul {
   display: flex;
   list-style: none;
   justify-content: end;
   margin: 0;
-  margin-bottom: 30px;
 
   // border-bottom: 1px solid $accent;
 

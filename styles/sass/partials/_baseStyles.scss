@@ -9,7 +9,8 @@ body {
 }
 
 h1 { 
-    font-family: $header-font;  
+    font-family: $header-font;
+    margin-top: 0;
 }
 
 h2 {
@@ -28,8 +29,10 @@ p {
 }
 
 .img-container {
-    height: auto;
-    width: calc(30% - 60px);
+    // height: auto;
+    // width: calc(30% - 60px);
+    height: 300px;
+    width: 300px;
     object-fit: contain;
     margin: 0 30px;
     
@@ -40,6 +43,36 @@ p {
         width: 100%;
     }
 }
+
+.top-image,
+.middle-image,
+.bottom-image {
+    height: 225px;
+    width: 225px;
+    
+    img {
+        box-shadow: none;
+    }
+}
+
+.top-image {
+    margin: 0 0 -50px -150px;
+}
+
+.middle-image {
+    margin: 0 0 -50px 0;
+    z-index: 10;
+}
+
+.bottom-image {
+    margin-left: -150px;
+}
+
+.header-image {
+    display: flex;
+    flex-direction: column;
+}
+
 
 ul {
     margin: 0;
