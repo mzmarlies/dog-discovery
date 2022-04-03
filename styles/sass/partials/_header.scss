@@ -31,13 +31,11 @@ header {
   }
 }
 
-.header-text {
-  max-width: 55%;
-}
 
-// .header-content {
-//   background-color: #F9C74F;
-// }
+.header-text {
+  width: 55%;
+  z-index: 20;
+}
 
 nav {
   margin-bottom: 30px;
