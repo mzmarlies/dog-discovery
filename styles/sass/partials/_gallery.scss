@@ -1,21 +1,35 @@
 .gallery {
     background-color: $primary;
+    display: flex;
+    justify-content: center;
 
+    // CHANGED HEADER STYLES ***************
     .gallery-h2 {
+        font-family: $header-font;
+        letter-spacing: 1.5;
+        font-size: 4rem;
+        text-shadow: 2px 2px 1px $tertiary;
         text-align: center;
         margin: 0;
         padding-top: 50px;
     }
-
+    // ADDED SCALE-DOWN AND FLEX WRAP TO IMAGES ***************
     .gallery-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         height: auto;
+        margin: 50px 0;
 
+        
         .gallery-img {
-            margin: 50px 25px;
+            // width: calc(33% - 40px);
+            margin: 10px 20px;
+            object-fit: scale-down;
 
             img {
                 border: 10px solid $tertiary;
-                box-shadow: 0 10px 0 0 $quaternary;
+                box-shadow: 0 10px 0 5px $quaternary;
                 border-radius: 50%;
             }
             
