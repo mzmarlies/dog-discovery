@@ -22,7 +22,7 @@ dogApp.getBreed = () => {
     return response.json();
   }).then((jsonResponse) => {
 
-    // console.log(jsonResponse);
+    console.log(jsonResponse);
     dogApp.dropdownBreeds(jsonResponse);
     // dogApp.getUserInput(jsonResponse);
     dogApp.dogList = jsonResponse;
@@ -71,18 +71,29 @@ dogApp.getUserInput = function() {
     const selectedDog = dogApp.dogList.filter(function(dog) {
       return breed === dog.name;
     })[0]
+    console.log(selectedDog);
+
+    const { name, life_span, temperament, breed_group, origin, height, weight } = selectedDog
+    // console.log(`temperament: ${temperament}, bred for: ${bred_for}, origin: ${origin}`)
+    const paragraph = document.createElement("p");
+    paragraph.classList.add("dog-info-text")
+    paragraph.innerText = `The ${name} has an average lifespan of ${life_span}. Its common traits include ${temperament}. They belong to the ${breed_group} breed group and its origins are ${origin}. Typically they are ${height.imperial} inches tall (metric: ${height.metric} cm tall), and on average weigh ${weight.imperial} lbs (metric: ${weight.metric} kg).`
+
+
+    document.querySelector("#results-text").appendChild(paragraph);
+
     // console.log(selectedDog);
     
     // creating an image for the dog:
     const image = document.createElement('img');
     image.classList.add('image-result')
     image.src = selectedDog.image.url;
+    image.alt = `an image of ${breed}`
+
+    // creating temerament info for selected dog
+    // const temperament = document.createElement("p")
 
 
-    // creating an image container:
-    // const imgDiv = document.createElement('div')
-    // imgDiv.classList.add('img-div');
-    // imgDiv.appendChild(image);
     document.querySelector('#img-div').appendChild(image);
   })
 }
