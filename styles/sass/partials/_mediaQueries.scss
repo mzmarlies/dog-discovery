@@ -12,5 +12,65 @@
     }
 }
 
+@media (max-width: 980px) {
+    .header-text {
+        width: 50%;
+    }
+    .content {
+        .text {
+            margin: 0;
+
+             h1 {
+                font-size: 4rem;
+                padding: 0 10px;
+            }
+        }
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        // height: auto;
+
+        .text {
+            max-width: 100%;
+        }
+    }
+
+    .header-text {
+        width: 100%;
+    }
+
+    .header-image {
+        flex-direction: row;
+    }
+
+
+
+    .interactive-section {
+        height: 100vh;
+        // padding: 150px 0 100px 0;
+
+        .image-1 {
+            display: none;
+        }
+
+        .text {
+            margin: 100px;
+        }
+    }
+}
+
 
 // testing to see if this feature branch will error

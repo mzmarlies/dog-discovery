@@ -519,3 +519,59 @@ footer a:hover, footer a:focus {
     height: 175px;
   }
 }
+@media (max-width: 980px) {
+  .header-text {
+    width: 50%;
+  }
+
+  .content .text {
+    margin: 0;
+  }
+  .content .text h1 {
+    font-size: 4rem;
+    padding: 0 10px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+  }
+
+  .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .content .text {
+    max-width: 100%;
+  }
+
+  .header-text {
+    width: 100%;
+  }
+
+  .header-image {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .interactive-section {
+    height: 100vh;
+  }
+  .interactive-section .image-1 {
+    display: none;
+  }
+  .interactive-section .text {
+    margin: 100px;
+  }
+}
