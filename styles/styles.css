@@ -291,11 +291,9 @@ p {
 
 .top-image {
   margin: 0;
-  margin-bottom: -50px;
 }
 
 .middle-image {
-  margin-bottom: -50px;
   margin-left: 150px;
   z-index: 10;
 }
@@ -315,11 +313,10 @@ p {
 }
 
 .first-top-image {
-  margin: 0 0 -50px 40%;
+  margin-left: 40%;
 }
 
 .first-middle-image {
-  margin: 0 0 -50px 0;
   z-index: 10;
 }
 
@@ -355,7 +352,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70vh;
+  height: 100vh;
 }
 .content .text {
   text-align: center;
@@ -373,11 +370,7 @@ header {
 
 .header-text {
   width: 55%;
-  z-index: 20;
-}
-
-nav {
-  margin-bottom: 30px;
+  margin: 0;
 }
 
 nav ul {
@@ -431,6 +424,7 @@ select:focus {
 }
 
 .interactive-section {
+  padding: 50px 0;
   background-color: #2EC4B6;
 }
 .interactive-section .text {
@@ -542,6 +536,7 @@ footer a:hover, footer a:focus {
   }
 
   .content {
+    height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -563,6 +558,10 @@ footer a:hover, footer a:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+
+  .header-content {
+    height: auto;
   }
 
   .interactive-section {

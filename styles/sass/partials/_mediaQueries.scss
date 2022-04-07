@@ -39,6 +39,7 @@
     }
 
     .content {
+        height: auto;
         flex-direction: column;
         align-items: center;
         // height: auto;
@@ -54,6 +55,10 @@
 
     .header-image {
         flex-direction: row;
+    }
+
+    .header-content {
+        height: auto;
     }
 
 
