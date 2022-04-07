@@ -225,6 +225,10 @@ body {
   font-size: 125%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   max-width: 1280px;
   width: 90%;
@@ -401,8 +405,10 @@ nav ul a:hover, nav ul a:focus {
   color: #FF9F1C;
 }
 
+.header-text a,
 button,
 select {
+  color: black;
   border: none;
   padding: 10px 20px;
   margin: 20px 0;
@@ -411,10 +417,17 @@ select {
   font-family: "Lato", sans-serif;
   font-weight: 300;
 }
-button:hover, button:focus,
+.header-text a:hover, .header-text a:focus,
+button:hover,
+button:focus,
 select:hover,
 select:focus {
   background-color: #FFBF69;
+}
+
+.header-text a {
+  font-size: 1.2rem;
+  display: inline-block;
 }
 
 .interactive-section {

@@ -70,8 +70,10 @@ nav ul {
   }
 }
 
+.header-text a,
 button,
 select {
+  color: black;
   border: none;
   padding: 10px 20px;
   margin: 20px 0;
@@ -85,4 +87,11 @@ select {
     background-color: $tertiary;
   }
 }
+
+.header-text a {
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+
 
