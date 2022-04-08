@@ -1,6 +1,15 @@
 // create an app object
 const dogApp = {};
 
+
+// const menu = document.querySelector(".menu-icon")
+// const ul = document.querySelector(".dropdown-menu")
+
+// // add event listener
+// menu.addEventListener("click", function(){
+//   ul.classList.toggle("click")
+// });
+
 // api url (breeds?)
 dogApp.apiUrl = "https://api.thedogapi.com/v1/breeds/";
 

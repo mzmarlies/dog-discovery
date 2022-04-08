@@ -133,15 +133,15 @@
 
 @media (max-width: 520px) {
 
-    .header {
-        height: auto;
-    }
+    // .header {
+    //     height: 70vh;
+    // }
+
     .first-bottom-image,
     .first-middle-image,
     .first-top-image,
     .bottom-image,
-    .top-image
-    {
+    .top-image {
         display: none;
     }
 
@@ -155,5 +155,32 @@
         .text {
             margin: 0;
         }
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 95%;
+    }
+
+    .interactive-section { 
+        .text {
+            padding: 20px 0;
+            font-size: 1rem;
+        }
+    }
+
+    #initial-results h2 {
+        font-size: 2.9rem;
+    }
+
+    .dog-info-text {
+        font-size: 1.3rem;
+    }
+
+    #results-text {
+        max-width: 100%;
     }
 }
