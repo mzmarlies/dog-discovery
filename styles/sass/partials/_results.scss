@@ -1,5 +1,39 @@
 .results {
-    height: 100vh;
     background-color: $secondary;
+    padding: 50px 0;
+
 }
 
+#initial-results {
+    text-align: center;
+}
+
+.results-container {
+    display: flex;
+    justify-content: center;
+}
+
+#img-div,
+#results-text {
+    max-width: 50%;
+}
+
+#img-div {
+    max-height: 50vh;
+    // width: auto;
+    object-fit: contain;
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+// .dog-info-text,
+// .image-result {
+//     padding: 50px 0;
+// }
+
+// .dog-info-title {
+//     padding-top: 50px;
+// }

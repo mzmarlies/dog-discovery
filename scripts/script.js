@@ -49,22 +49,25 @@ dogApp.dropdownBreeds = (dogObjects) => {
 // display the user input on change
 dogApp.getUserInput = function() {
   document.querySelector('#dog-breeds').addEventListener('change', function(){
-    document.querySelector('#intial-results').innerHTML = "";
+    document.querySelector('#initial-results').innerHTML = "";
+    document.querySelector('#img-div').innerHTML = "";
+    document.querySelector('#results-text').innerHTML = "";
     const breed = this.value;
     dogApp.getBreed(breed);
     // console.log(breed)
     
     const title = document.createElement('h2');
+    title.classList.add("dog-info-title")
     // title.innerText = "";
     title.innerText = breed;
     // console.log(title)
 
   
     // making a div for a title:
-    const titleDiv = document.createElement('div')
-    titleDiv.classList.add('title-div');
-    titleDiv.appendChild(title);
-    document.querySelector('#intial-results').appendChild(titleDiv);
+    // const titleDiv = document.createElement('div')
+    // titleDiv.classList.add('title-div');
+    // titleDiv.appendChild(title);
+    document.querySelector('#initial-results').appendChild(title);
 
 
     // pulling dog info from array:
@@ -74,10 +77,19 @@ dogApp.getUserInput = function() {
     console.log(selectedDog);
 
     const { name, life_span, temperament, breed_group, origin, height, weight } = selectedDog
-    // console.log(`temperament: ${temperament}, bred for: ${bred_for}, origin: ${origin}`)
+    
+
     const paragraph = document.createElement("p");
     paragraph.classList.add("dog-info-text")
     paragraph.innerText = `The ${name} has an average lifespan of ${life_span}. Its common traits include ${temperament}. They belong to the ${breed_group} breed group and its origins are ${origin}. Typically they are ${height.imperial} inches tall (metric: ${height.metric} cm tall), and on average weigh ${weight.imperial} lbs (metric: ${weight.metric} kg).`
+
+
+    
+
+    // if (origin === "") {
+    //   let originStatement = "unknown";
+    // }
+
 
 
     document.querySelector("#results-text").appendChild(paragraph);
@@ -102,7 +114,7 @@ dogApp.getUserInput = function() {
 // need to decide whether to use css for this instead.
 dogApp.getDogInfo = function() {
   document.querySelector('#img-div').addEventListener('click', function() {
-    document.querySelector('#intial-results').innerHTML = "";
+    document.querySelector('#initial-results').innerHTML = "";
     const breed = this.value;
     // dogApp.getBreed(breed);
 
