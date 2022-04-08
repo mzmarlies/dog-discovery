@@ -2,14 +2,17 @@
     background-color: $secondary;
 }
 
+
 #initial-results {
     text-align: center;
 }
+
 
 .results-container {
     display: flex;
     justify-content: center;
 }
+
 
 #img-div,
 #results-text {
@@ -17,7 +20,6 @@
     display: flex;
     align-items: center;
 }
-
 
 
 #img-div {
@@ -38,18 +40,19 @@
     padding: 50px 0;
 }
 
+
 .js-img-div {
     padding-right: 15px;
 }
 
+
 .dog-info-text {
-    // background-color: $tertiary;
     font-size: 2rem;
     border: 10px solid $primary;
     font-family: $sub-headers;
     padding: 50px;
-    // padding-left: 15px;
 }
+
 
 .dog-info-title {
     padding-top: 50px;

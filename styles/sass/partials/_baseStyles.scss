@@ -2,9 +2,11 @@ body {
     font-size: 125%;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
+
 
 .wrapper {
     max-width: 1280px;
@@ -12,10 +14,12 @@ html {
     margin: 0 auto;
 }
 
+
 h1 { 
     font-family: $header-font;
     margin: 0 0 20px 0;
 }
+
 
 h2 {
     font-family: $sub-headers;
@@ -24,44 +28,42 @@ h2 {
     color: $accent;
 }
 
+
 h3 {
     font-family: $sub-headers;
 }
 
+
 p {
     font-family: $body-font;
 }
+
 
 img {
     height: 100%;
     width: 100%;
 }
 
-// CHANGED MARGIN ********************
+
 .img-container {
     height: auto;
     width: 300px;
     object-fit: contain;
-    // margin: 0 30px;
     margin: 0;
     
     img {
         box-shadow: 30px 30px 0 0 $solid-white, -30px -30px 0 0 $quaternary;
         border: 5px solid $tertiary;
-        // height: 100%;
-        // width: 100%;
     }
 }
 
-// ADDED IN LEFT-SIDE IMAGES, CHANGED SIZE, ALTERED MARGINS***************
+
 .first-top-image,
 .first-middle-image,
 .first-bottom-image,
 .top-image,
 .middle-image,
 .bottom-image {
-    // height: 225px;
-    // width: 225px;
     height: 200px;
     width: 200px;
     
@@ -70,23 +72,22 @@ img {
     }
 }
 
+
 .top-image {
-    // margin: 0 0 -50px -150px;
     margin: 0;
-    // margin-bottom: -50px;
 }
 
+
 .middle-image {
-    // margin: 0 0 -50px 0;
-    // margin-bottom: -50px;
     margin-left: 150px;
     z-index: 10;
 }
 
+
 .bottom-image {
-    // margin-left: -150px;
     margin: 0;
 }
+
 
 .header-image {
     display: flex;
@@ -95,15 +96,14 @@ img {
 
 
 .first-top-image {
-    // margin: 0 0 -50px 150px;
-    // margin: 0 0 -50px 40%;
     margin-left: 40%;
 }
 
+
 .first-middle-image {
-    // margin: 0 0 -50px 0;
     z-index: 10;
 }
+
 
 .first-bottom-image {
     margin-left: 150px;
@@ -115,12 +115,14 @@ ul {
     padding: 0;
 }
 
+
 a {
     text-decoration: none;
     font-family: $body-font;
     font-weight: 400;
     font-size: 1.5rem;
 }
+
 
 .gallery-h2,
 .dog-info-title {
@@ -132,9 +134,11 @@ a {
     padding-top: 50px;
 }
 
+
 .gallery-h2 {
     text-shadow: 2px 2px 1px $tertiary;
 }
+
 
 .dog-info-title {
     color: $quaternary;

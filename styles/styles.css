@@ -450,7 +450,7 @@ select:focus {
   display: block;
   margin: 10px;
   position: absolute;
-  top: 20px;
+  top: 0;
   left: 0;
   z-index: 30;
 }
@@ -635,8 +635,17 @@ footer a:hover, footer a:focus {
     width: 175px;
     height: 175px;
   }
+
+  .hamburger-menu {
+    position: static;
+    padding: 0;
+  }
 }
 @media (max-width: 1250px) {
+  .header {
+    height: auto;
+  }
+
   .dog-info-text {
     font-size: 1.7rem;
     padding: 25px;

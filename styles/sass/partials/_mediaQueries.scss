@@ -10,10 +10,21 @@
         width: 175px;
         height: 175px;
     }
+
+    .hamburger-menu {
+        position: static;
+        padding: 0;
+    }
+
 }
 
 
+
 @media (max-width: 1250px) {
+    .header {
+        height: auto;
+    }
+
     .dog-info-text {
         font-size: 1.7rem;
         padding: 25px;
@@ -47,6 +58,7 @@
         height: 70vh;
     }
     
+
     .dropdown-image {
         img {
             box-shadow: none;
@@ -59,13 +71,16 @@
         align-items: center;
     }
     
+
     #img-div {
         max-width: 60%;
     }
 
+
     #results-text {
         max-width: 80%;
     }
+
 
     .js-img-div{
         padding: 0;
@@ -74,42 +89,33 @@
 }
 
 
-// @media (max-width: 800px) {
-//     .dropdown-image {
-//         display: none;
-//     }
-
-//     .dropdown-content {
-//         height: auto;
-//         flex-direction: column;
-//         align-items: center;
-//     }
-// }
-
 
 @media (max-width: 800px) {
     .header {
         height: auto;
     }
 
+
     .content {
         height: auto;
         flex-direction: column;
         align-items: center;
-        // height: auto;
 
         .text {
             max-width: 100%;
         }
     }
 
+
     .header-text {
         width: 100%;
     }
 
+
     .header-image {
         flex-direction: row;
     }
+
 
     .header-content {
         height: auto;
@@ -118,7 +124,6 @@
 
     .interactive-section {
         height: auto;
-        // padding: 150px 0 100px 0;
 
         .dropdown-image {
             display: none;
@@ -132,11 +137,6 @@
 
 
 @media (max-width: 520px) {
-
-    // .header {
-    //     height: 70vh;
-    // }
-
     .first-bottom-image,
     .first-middle-image,
     .first-top-image,
@@ -145,11 +145,13 @@
         display: none;
     }
 
+
     .middle-image {
         height: 320px;
         width: 320px;
         margin: 25px;
     }
+
 
     .interactive-section {
         .text {
@@ -165,6 +167,7 @@
         width: 95%;
     }
 
+
     .interactive-section { 
         .text {
             padding: 20px 0;
@@ -172,14 +175,17 @@
         }
     }
 
+
     #initial-results h2 {
         font-size: 2.9rem;
     }
+
 
     .dog-info-text {
         font-size: 1.3rem;
     }
 
+    
     #results-text {
         max-width: 100%;
     }
