@@ -545,7 +545,6 @@ select:focus {
 }
 
 .dog-info-text {
-  padding-left: 15px;
   font-size: 2rem;
   border: 10px solid #2EC4B6;
   font-family: "Arapey", serif;
