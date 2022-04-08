@@ -132,8 +132,28 @@
 
 
 @media (max-width: 520px) {
+
+    .header {
+        height: auto;
+    }
     .first-bottom-image,
-    .bottom-image {
+    .first-middle-image,
+    .first-top-image,
+    .bottom-image,
+    .top-image
+    {
         display: none;
+    }
+
+    .middle-image {
+        height: 320px;
+        width: 320px;
+        margin: 25px;
+    }
+
+    .interactive-section {
+        .text {
+            margin: 0;
+        }
     }
 }
