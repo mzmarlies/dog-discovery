@@ -64,9 +64,7 @@ dogApp.getUserInput = function() {
 
   
     // making a div for a title:
-    // const titleDiv = document.createElement('div')
-    // titleDiv.classList.add('title-div');
-    // titleDiv.appendChild(title);
+
     document.querySelector('#initial-results').appendChild(title);
 
 
@@ -105,8 +103,11 @@ dogApp.getUserInput = function() {
     // creating temerament info for selected dog
     // const temperament = document.createElement("p")
 
+    const jsImgDiv = document.createElement('div')
+    jsImgDiv.classList.add('js-img-div');
+    jsImgDiv.appendChild(image);
 
-    document.querySelector('#img-div').appendChild(image);
+    document.querySelector('#img-div').appendChild(jsImgDiv);
   })
 }
 

@@ -1,7 +1,5 @@
 .results {
     background-color: $secondary;
-    padding: 50px 0;
-
 }
 
 #initial-results {
@@ -15,25 +13,44 @@
 
 #img-div,
 #results-text {
-    max-width: 50%;
+    max-width: 40%;
+    display: flex;
+    align-items: center;
 }
 
+
+
 #img-div {
-    max-height: 50vh;
-    // width: auto;
+    height: auto;
     object-fit: contain;
 
     img {
         height: auto;
         width: 100%;
+        border: 5px solid $tertiary;
+        box-shadow: -5px -5px 0 0 $quaternary, 5px 5px 0 0 $quaternary;
     }
 }
 
-// .dog-info-text,
-// .image-result {
-//     padding: 50px 0;
-// }
 
-// .dog-info-title {
-//     padding-top: 50px;
-// }
+.dog-info-text,
+.js-img-div {
+    padding: 50px 0;
+}
+
+.js-img-div {
+    padding-right: 15px;
+}
+
+.dog-info-text {
+    padding-left: 15px;
+    // background-color: $tertiary;
+    font-size: 2rem;
+    border: 10px solid $primary;
+    font-family: $sub-headers;
+    padding: 50px;
+}
+
+.dog-info-title {
+    padding-top: 50px;
+}
