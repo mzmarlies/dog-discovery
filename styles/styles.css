@@ -681,3 +681,9 @@ footer a:hover, footer a:focus {
     margin: 100px;
   }
 }
+@media (max-width: 520px) {
+  .first-bottom-image,
+.bottom-image {
+    display: none;
+  }
+}

@@ -131,4 +131,9 @@
 }
 
 
-// testing to see if this feature branch will error
+@media (max-width: 520px) {
+    .first-bottom-image,
+    .bottom-image {
+        display: none;
+    }
+}
