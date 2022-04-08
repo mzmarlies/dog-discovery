@@ -3,12 +3,13 @@ header {
   // background-color: $secondary;
   background: linear-gradient($quaternary, $tertiary, $solid-white, $secondary, $primary);
 }
-
 .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70vh;
+  // height: 70vh;
+  height: 100vh;
+  // changed this height 
 
   // .img-container {
   //   border: 10px solid $primary;
@@ -22,24 +23,27 @@ header {
     max-width: 60%;
     // border-bottom: 10px solid $tertiary;
     background-color: hsla(176, 63%, 87%, 30%);
+    
 
-    h1 {
-      font-size: 5.5rem;
-      text-shadow: 2px 2px 3px $accent;
-      color: $primary;
+      h1 {
+        font-size: 5.5rem;
+        text-shadow: 2px 2px 3px $accent;
+        color: $primary;
+      }
     }
   }
-}
 
 
 .header-text {
   width: 55%;
-  z-index: 20;
+  // z-index: 20;
+
+  margin: 0;
 }
 
-nav {
-  margin-bottom: 30px;
-}
+// nav {
+//   margin-bottom: 30px;
+// }
 
 nav ul {
   display: flex;
