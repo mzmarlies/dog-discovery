@@ -1,5 +1,7 @@
-// create an app object
+// create an app object:
 const dogApp = {};
+
+
 
 
 // const menu = document.querySelector(".menu-icon")
@@ -10,37 +12,40 @@ const dogApp = {};
 //   ul.classList.toggle("click")
 // });
 
-// api url (breeds?)
+
+
+
+// api url:
 dogApp.apiUrl = "https://api.thedogapi.com/v1/breeds/";
 
-// api key
+// api key:
 dogApp.apiKey = "3e69176f-30f7-43b0-a73b-9152505ba7d0";
+
 // storing all the dogs:
 dogApp.dogList = [];
 
 
-// pulling the dog breeds and info from API
+// pulling the dog breeds and info from API:
 dogApp.getBreed = () => {
   const url = new URL(dogApp.apiUrl);
   url.search = new URLSearchParams({
     "x-api-key": dogApp.apiKey
   })
 
-  // fetch api
+  // fetch api:
   fetch(url).then((response) => {
     return response.json();
   }).then((jsonResponse) => {
 
-    console.log(jsonResponse);
     dogApp.dropdownBreeds(jsonResponse);
-    // dogApp.getUserInput(jsonResponse);
     dogApp.dogList = jsonResponse;
   })
 };
 
 
-// populate the dropdown wiht dog breeds
+// populate the dropdown wiht dog breeds:
 dogApp.dropdownBreeds = (dogObjects) => {
+  document.querySelector('select').innerHTML = "";
 
   const dropdown = document.querySelector("select");
 
@@ -50,67 +55,48 @@ dogApp.dropdownBreeds = (dogObjects) => {
     optionElement.value = dogObject.name;
     optionElement.innerHTML = dogObject.name;
     
-    // optionElement.appendChild();
     dropdown.appendChild(optionElement);
   })
 }
 
-// display the user input on change
+
+// display the user input on change:
 dogApp.getUserInput = function() {
   document.querySelector('#dog-breeds').addEventListener('change', function(){
     document.querySelector('#initial-results').innerHTML = "";
     document.querySelector('#img-div').innerHTML = "";
     document.querySelector('#results-text').innerHTML = "";
+    document.querySelector('.results-container').scrollIntoView('#results');
+
     const breed = this.value;
     dogApp.getBreed(breed);
-    // console.log(breed)
     
     const title = document.createElement('h2');
     title.classList.add("dog-info-title")
-    // title.innerText = "";
     title.innerText = breed;
-    // console.log(title)
 
-  
     // making a div for a title:
-
     document.querySelector('#initial-results').appendChild(title);
-
 
     // pulling dog info from array:
     const selectedDog = dogApp.dogList.filter(function(dog) {
       return breed === dog.name;
     })[0]
-    console.log(selectedDog);
 
-    const { name, life_span, temperament, breed_group, origin, height, weight } = selectedDog
+    const { name, life_span, temperament, breed_group, height, weight } = selectedDog
     
-
+    // creating text info for selected dog:
     const paragraph = document.createElement("p");
     paragraph.classList.add("dog-info-text")
-    paragraph.innerText = `The ${name} has an average lifespan of ${life_span}. Its common traits include ${temperament}. They belong to the ${breed_group} breed group and its origins are ${origin}. Typically they are ${height.imperial} inches tall (metric: ${height.metric} cm tall), and on average weigh ${weight.imperial} lbs (metric: ${weight.metric} kg).`
-
-
-    
-
-    // if (origin === "") {
-    //   let originStatement = "unknown";
-    // }
-
-
+    paragraph.innerText = `The ${name} has an average lifespan of ${life_span}. Its common traits include being ${temperament}. It belongs to the ${breed_group} breed group. Typically it is ${height.imperial} inches tall (metric: ${height.metric} cm tall), and on average weighs ${weight.imperial} lbs (metric: ${weight.metric} kg).`
 
     document.querySelector("#results-text").appendChild(paragraph);
 
-    // console.log(selectedDog);
-    
     // creating an image for the dog:
     const image = document.createElement('img');
     image.classList.add('image-result')
     image.src = selectedDog.image.url;
     image.alt = `an image of ${breed}`
-
-    // creating temerament info for selected dog
-    // const temperament = document.createElement("p")
 
     const jsImgDiv = document.createElement('div')
     jsImgDiv.classList.add('js-img-div');
@@ -120,38 +106,13 @@ dogApp.getUserInput = function() {
   })
 }
 
-// trying to get info but not working
-// need to decide whether to use css for this instead.
-dogApp.getDogInfo = function() {
-  document.querySelector('#img-div').addEventListener('click', function() {
-    document.querySelector('#initial-results').innerHTML = "";
-    const breed = this.value;
-    // dogApp.getBreed(breed);
 
-    console.log(breed)
-    // const selectedDogInfo = dogApp.dogList.filter(function(dog) {
-    //   return breed === dog.name;
-    // })[0]
-    // console.log(selectedDogInfo);
-  })
-}
-
-
-
-// on click event, show image for specified breed
-
-
-
-
-// 2nd click event to show details
-
-// create init fucntion to house application
-  // call methods
-
+// create init fucntion to house application:
 dogApp.init = () => {
   dogApp.getBreed();
   dogApp.getUserInput();
   dogApp.getDogInfo();
 }
 
+// call init function:
 dogApp.init();

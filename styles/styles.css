@@ -279,8 +279,8 @@ img {
 .top-image,
 .middle-image,
 .bottom-image {
-  height: 200px;
-  width: 200px;
+  height: 185px;
+  width: 185px;
 }
 .first-top-image img,
 .first-middle-image img,
@@ -473,11 +473,11 @@ select:focus {
   transition: 3s;
   padding: 0 10px;
   color: #11504a;
-  background-color: hsla(35deg, 100%, 55%, 0.6);
+  background-color: hsl(35deg, 100%, 55%);
   cursor: pointer;
 }
 .hamburger-menu .dropdown-menu li {
-  padding: 5px 0;
+  padding: 15px 0;
   margin-left: 0;
   padding-left: 0;
   max-width: 20px;
@@ -620,11 +620,6 @@ footer a:hover, footer a:focus {
 .middle-image,
 .bottom-image {
     margin: 0;
-  }
-
-  .hamburger-menu {
-    position: static;
-    padding: 0;
   }
 }
 @media (max-width: 1250px) {
