@@ -118,10 +118,15 @@
 
         .text {
             max-width: 100%;
-            padding: 15px;
+            padding: 0;
         }
     }
 
+    .header-content {
+        .text {
+            padding: 15px;
+        }
+    }
 
     .header-text {
         width: 100%;
@@ -144,13 +149,13 @@
 
     .interactive-section {
         height: auto;
-
+        .text {
+            padding: 100px 50px;
+            margin: 100px;
+        }
+        
         .dropdown-image {
             display: none;
-        }
-
-        .text {
-            margin: 100px;
         }
     }
 }
@@ -174,13 +179,6 @@
     }
 
 
-    .interactive-section {
-        .text {
-            margin: 0;
-        }
-    }
-
-
     .content {
         
         .text {
@@ -200,8 +198,17 @@
         }
     }
 
+
     .middle-image {
         margin: 0;
+    }
+
+
+    .interactive-section {
+        .text {
+            margin: 0;
+            padding: 50px 10px;
+        }
     }
 }
 
@@ -211,11 +218,10 @@
     .wrapper {
         width: 95%;
     }
+    
 
-
-    .interactive-section { 
-        .text {
-            padding: 20px 0;
+    .interactive-section {
+        select {
             font-size: 1rem;
         }
     }

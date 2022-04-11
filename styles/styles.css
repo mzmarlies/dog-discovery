@@ -717,6 +717,10 @@ footer a:hover, footer a:focus {
   }
   .content .text {
     max-width: 100%;
+    padding: 0;
+  }
+
+  .header-content .text {
     padding: 15px;
   }
 
@@ -741,11 +745,12 @@ footer a:hover, footer a:focus {
   .interactive-section {
     height: auto;
   }
+  .interactive-section .text {
+    padding: 100px 50px;
+    margin: 100px;
+  }
   .interactive-section .dropdown-image {
     display: none;
-  }
-  .interactive-section .text {
-    margin: 100px;
   }
 }
 @media (max-width: 550px) {
@@ -763,10 +768,6 @@ footer a:hover, footer a:focus {
     margin: 25px;
   }
 
-  .interactive-section .text {
-    margin: 0;
-  }
-
   .content .text {
     padding: 0;
   }
@@ -782,14 +783,18 @@ footer a:hover, footer a:focus {
   .middle-image {
     margin: 0;
   }
+
+  .interactive-section .text {
+    margin: 0;
+    padding: 50px 10px;
+  }
 }
 @media (max-width: 480px) {
   .wrapper {
     width: 95%;
   }
 
-  .interactive-section .text {
-    padding: 20px 0;
+  .interactive-section select {
     font-size: 1rem;
   }
 
