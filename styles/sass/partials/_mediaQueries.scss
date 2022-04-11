@@ -162,6 +162,16 @@
 
 
 
+@media (max-width: 580px) {
+    .header-content {
+        .text {
+            padding: 10px;
+        }
+    }
+}
+
+
+
 @media (max-width: 550px) {
     .first-bottom-image,
     .first-middle-image,
@@ -180,7 +190,6 @@
 
 
     .content {
-        
         .text {
             padding: 0;
 

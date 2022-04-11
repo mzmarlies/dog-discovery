@@ -753,6 +753,11 @@ footer a:hover, footer a:focus {
     display: none;
   }
 }
+@media (max-width: 580px) {
+  .header-content .text {
+    padding: 10px;
+  }
+}
 @media (max-width: 550px) {
   .first-bottom-image,
 .first-middle-image,
