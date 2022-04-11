@@ -38,6 +38,10 @@
 @media (max-width: 980px) {
     .header-text {
         width: 50%;
+        
+        h2 {
+        font-size: 2rem;
+    }
     }
 
     .content {
@@ -49,11 +53,6 @@
                 padding: 0 10px;
             }
         }
-    }
-
-
-    h2 {
-        font-size: 2rem;
     }
 
 
@@ -120,16 +119,16 @@
         .text {
             max-width: 100%;
             padding: 15px;
-
-            h2 {
-                font-size: 1.5rem;
-            }
         }
     }
 
 
     .header-text {
         width: 100%;
+
+        h2 {
+            font-size: 1.5rem;
+        }
     }
 
 

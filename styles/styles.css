@@ -643,6 +643,9 @@ footer a:hover, footer a:focus {
   .header-text {
     width: 50%;
   }
+  .header-text h2 {
+    font-size: 2rem;
+  }
 
   .content .text {
     margin: 0;
@@ -650,10 +653,6 @@ footer a:hover, footer a:focus {
   .content .text h1 {
     font-size: 4rem;
     padding: 0 10px;
-  }
-
-  h2 {
-    font-size: 2rem;
   }
 
   .dropdown-content {
@@ -720,12 +719,12 @@ footer a:hover, footer a:focus {
     max-width: 100%;
     padding: 15px;
   }
-  .content .text h2 {
-    font-size: 1.5rem;
-  }
 
   .header-text {
     width: 100%;
+  }
+  .header-text h2 {
+    font-size: 1.5rem;
   }
 
   .header-image {
