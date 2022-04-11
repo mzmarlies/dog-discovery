@@ -38,6 +38,10 @@
 @media (max-width: 980px) {
     .header-text {
         width: 50%;
+        
+        h2 {
+        font-size: 2rem;
+    }
     }
 
     .content {
@@ -49,11 +53,6 @@
                 padding: 0 10px;
             }
         }
-    }
-
-
-    h2 {
-        font-size: 2rem;
     }
 
 
@@ -119,17 +118,22 @@
 
         .text {
             max-width: 100%;
-            padding: 15px;
-
-            h2 {
-                font-size: 1.5rem;
-            }
+            padding: 0;
         }
     }
 
+    .header-content {
+        .text {
+            padding: 15px;
+        }
+    }
 
     .header-text {
         width: 100%;
+
+        h2 {
+            font-size: 1.5rem;
+        }
     }
 
 
@@ -145,13 +149,23 @@
 
     .interactive-section {
         height: auto;
-
+        .text {
+            padding: 100px 50px;
+            margin: 100px;
+        }
+        
         .dropdown-image {
             display: none;
         }
+    }
+}
 
+
+
+@media (max-width: 580px) {
+    .header-content {
         .text {
-            margin: 100px;
+            padding: 10px;
         }
     }
 }
@@ -175,15 +189,7 @@
     }
 
 
-    .interactive-section {
-        .text {
-            margin: 0;
-        }
-    }
-
-
     .content {
-        
         .text {
             padding: 0;
 
@@ -201,8 +207,17 @@
         }
     }
 
+
     .middle-image {
         margin: 0;
+    }
+
+
+    .interactive-section {
+        .text {
+            margin: 0;
+            padding: 50px 10px;
+        }
     }
 }
 
@@ -212,11 +227,10 @@
     .wrapper {
         width: 95%;
     }
+    
 
-
-    .interactive-section { 
-        .text {
-            padding: 20px 0;
+    .interactive-section {
+        select {
             font-size: 1rem;
         }
     }

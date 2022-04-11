@@ -1,20 +1,6 @@
 // create an app object:
 const dogApp = {};
 
-
-
-
-// const menu = document.querySelector(".menu-icon")
-// const ul = document.querySelector(".dropdown-menu")
-
-// // add event listener
-// menu.addEventListener("click", function(){
-//   ul.classList.toggle("click")
-// });
-
-
-
-
 // api url:
 dogApp.apiUrl = "https://api.thedogapi.com/v1/breeds/";
 
@@ -83,12 +69,13 @@ dogApp.getUserInput = function() {
       return breed === dog.name;
     })[0]
 
-    const { name, life_span, temperament, breed_group, height, weight } = selectedDog
+    
+    const { name, life_span, temperament, breed_group, height, weight } = selectedDog;
     
     // creating text info for selected dog:
     const paragraph = document.createElement("p");
     paragraph.classList.add("dog-info-text")
-    paragraph.innerText = `The ${name} has an average lifespan of ${life_span}. Its common traits include being ${temperament}. It belongs to the ${breed_group} breed group. Typically it is ${height.imperial} inches tall (metric: ${height.metric} cm tall), and on average weighs ${weight.imperial} lbs (metric: ${weight.metric} kg).`
+    paragraph.innerText = `The ${name} has an average lifespan of ${life_span}. Its common traits include being ${temperament.toLowerCase()}. It belongs to the ${breed_group} breed group. Typically it is ${height.imperial} inches tall (metric: ${height.metric} cm tall), and on average weighs ${weight.imperial} lbs (metric: ${weight.metric} kg).`
 
     document.querySelector("#results-text").appendChild(paragraph);
 
@@ -111,7 +98,6 @@ dogApp.getUserInput = function() {
 dogApp.init = () => {
   dogApp.getBreed();
   dogApp.getUserInput();
-  dogApp.getDogInfo();
 }
 
 // call init function:
