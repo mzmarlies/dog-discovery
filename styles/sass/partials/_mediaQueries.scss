@@ -13,7 +13,8 @@
 
 
 @media (max-width: 1250px) {
-    .dog-info-text {
+    .dog-info-text,
+    .dog-origin {
         font-size: 1.7rem;
         padding: 25px;
     }
@@ -241,7 +242,8 @@
     }
 
 
-    .dog-info-text {
+    .dog-info-text,
+    .dog-origin {
         font-size: 1.3rem;
     }
 

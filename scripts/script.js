@@ -70,12 +70,21 @@ dogApp.getUserInput = function() {
     })[0]
 
     
-    const { name, life_span, temperament, breed_group, height, weight } = selectedDog;
+    let { name, life_span, origin, temperament, breed_group, height, weight } = selectedDog;
     
+    // controlling for undefined and missing results:
+    if(breed_group === "" || breed_group === undefined) {
+      breed_group = 'unknown'
+    }
+
+    if (origin === "" || origin === undefined) {
+      origin = 'unknown'
+    } 
+
     // creating text info for selected dog:
     const paragraph = document.createElement("p");
-    paragraph.classList.add("dog-info-text")
-    paragraph.innerText = `The ${name} has an average lifespan of ${life_span}. Its common traits include being ${temperament.toLowerCase()}. It belongs to the ${breed_group} breed group. Typically it is ${height.imperial} inches tall (metric: ${height.metric} cm tall), and on average weighs ${weight.imperial} lbs (metric: ${weight.metric} kg).`
+    paragraph.classList.add("dog-info-text");
+    paragraph.innerText = `The ${name} has an average lifespan of ${life_span}. Its common traits include being ${temperament.toLowerCase()}. Its breed group is ${breed_group.toLowerCase()}. Typically it is ${height.imperial} inches tall (metric: ${height.metric} cm tall), and on average weighs ${weight.imperial} lbs (metric: ${weight.metric} kg). Its origins are ${origin}.`
 
     document.querySelector("#results-text").appendChild(paragraph);
 

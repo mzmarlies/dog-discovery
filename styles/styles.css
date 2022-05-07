@@ -586,7 +586,8 @@ select:focus {
   padding-right: 15px;
 }
 
-.dog-info-text {
+.dog-info-text,
+.dog-origin {
   font-size: 2rem;
   border: 10px solid #2EC4B6;
   font-family: "Arapey", serif;
@@ -623,7 +624,8 @@ footer a:hover, footer a:focus {
   }
 }
 @media (max-width: 1250px) {
-  .dog-info-text {
+  .dog-info-text,
+.dog-origin {
     font-size: 1.7rem;
     padding: 25px;
   }
@@ -807,7 +809,8 @@ footer a:hover, footer a:focus {
     font-size: 2.9rem;
   }
 
-  .dog-info-text {
+  .dog-info-text,
+.dog-origin {
     font-size: 1.3rem;
   }
 
